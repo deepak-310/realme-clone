@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar{
+    display: flex;
+    /* position: fixed; */
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+.eliments{
+    display: flex;
+    margin-left: 10px;
+}
+.navbar h4,h3{
+    margin: 10px 10px;
+    color: gray;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar h4:hover{
+    color:rgb(253, 194, 0);
+    cursor: pointer;
+}
+
+.lefteliments{
+    display: flex;
+    margin: auto;
+    margin-right: 10px;
+}
