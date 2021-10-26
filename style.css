@@ -5,26 +5,77 @@
 }
 .navbar{
     display: flex;
-    /* position: fixed; */
+    align-items: center;
+    background-color: white;
     border-bottom: 1px solid rgb(199, 199, 199);
+    z-index: 2;
+    position: fixed;
+    width: 100%;
 }
 .eliments{
     display: flex;
+    position: relative;
     margin-left: 10px;
 }
 .navbar h4,h3{
+    position: relative;
     margin: 10px 10px;
     color: gray;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
 }
 .navbar h4:hover{
+    position: relative;
     color:rgb(253, 194, 0);
     cursor: pointer;
 }
 
 .lefteliments{
+    position: relative;
     display: flex;
-    margin: auto;
-    margin-right: 10px;
+    align-items: center;
+    justify-content: flex-end;
+   margin-left: 250px;
+}
+.navbar2{
+    background-color: white;
+    position: relative;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(199, 199, 199) ;
+    
+}
+.navbar2 ul{
+    display: flex;
+    align-items: center;
+    list-style:none;
+}
+.navbar2 ul li{
+    margin-left:40px;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.navbar2 ul li i{
+    font-size: 25px;
+}
+.navbar2 ul li:hover{
+    color:rgb(253, 194, 0);
+    cursor: pointer;
+}
+.navbar2 ul li i:hover{
+    color: black;
+}
+.img1{
+    height: 25px;
+    margin-left: 20px;
+}
+.container{
+    position: relative;
+    top: 40px;
+    width: 100%;
 }
