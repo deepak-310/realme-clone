@@ -4,7 +4,7 @@
 
 }
 body{
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(235, 233, 233);
 }
 .navbar{
     display: flex;
@@ -144,6 +144,16 @@ img {
     font-family: 'Work Sans', sans-serif;
     font-size: 50px;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+.text_head p{
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 2px;
 }
 .text_subhead{
     font-family: 'Work Sans', sans-serif;
@@ -163,11 +173,7 @@ img {
     align-items: center;
     word-spacing: 10px;
 }
-.price i{
-    font-size: 25px;
-}
 .price p{
-    margin-left: 10px;
     font-size: 30px;
 }
 .buynow_btn{
@@ -215,8 +221,92 @@ img {
 .active, .dot:hover {
   background-color: #717171;
 }
+/* ====================================items sections =========================*/
+.items{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.goneinflash h1{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.box_container{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
 
+}
+.box_container .box{
+    flex: 1 1 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 350px;
+    transform: translate3d(0,0,0); 
+}
+.box:hover{
+  
+    transform: scale(1.1);
+    z-index: 2;
+}
+.new{
+    margin-left: -250px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: rgb(138, 212, 26);
+    color: white;
+    padding: 2px;
+}
+.box_container .box img{
+    margin-top: 3rem;
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
 
+}
+.box_container .box .content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.content h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.content p{
+    margin-top: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: rgb(87, 86, 86);   
+}
+.content h3{
+   display: flex;
+   font-size: 15px;
+   font-family: 'Nunito', sans-serif;
+   font-weight: 600;
+   color: red;
+}
+.content h3 span{
+    color: #666666;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
